@@ -22,7 +22,7 @@ public class DocumentController {
         return documentService.getAllDocuments();
     }
 
-    @PostMapping
+    @PostMapping("/upload")
     public Document uploadDocument(@RequestParam("file") MultipartFile file,
                                    @RequestParam("title") String title,
                                    @RequestParam("organization") String organization,
