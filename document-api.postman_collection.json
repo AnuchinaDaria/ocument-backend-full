@@ -1,0 +1,94 @@
+{
+    "info": {
+        "_postman_id": "a4a55324-4c68-4e94-8d53-aaa5f2b98fdd",
+        "name": "Document API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Upload Document",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "type": "file",
+                            "src": "",
+                            "description": "Document File"
+                        },
+                        {
+                            "key": "title",
+                            "value": "Test Document",
+                            "type": "text"
+                        },
+                        {
+                            "key": "organization",
+                            "value": "Test Organization",
+                            "type": "text"
+                        },
+                        {
+                            "key": "category",
+                            "value": "Test Category",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/documents/upload",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "documents",
+                        "upload"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Documents",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/documents",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "documents"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Document By ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/documents/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "documents",
+                        "1"
+                    ]
+                }
+            }
+        }
+    ]
+}
